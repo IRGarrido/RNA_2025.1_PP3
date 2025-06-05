@@ -7,6 +7,7 @@ Repositório destinado à publicação das atividades do 2° Projeto Prático de
 **Última atualização:** 07/04/2025 
 
 Este projeto tem por objetivo a execução de um treinamento mediante Aprendizado Supervisionado do neurônio Perceptron de Rosenblatt para problemas de classificação. Nesse contexto, utiliza-se o dataset Stellar Classification Dataset - SDSS17, com dados disponíveis à comunidade científica pelo servidor Skyserver do levantamento astronômico Sloan Digital Sky Survey. A tarefa de classificação utiliza de valores ondas emitidas por um corpo celestes para definir se este é uma galáxia, quasar ou estrela.
+Disponível em: https://www.kaggle.com/datasets/fedesoriano/stellar-classification-dataset-sdss17 
 
 ## Tecnologias Utilizadas
 - **Anaconda:** Gerenciamento de ambientes virtuais;
