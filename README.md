@@ -1,8 +1,8 @@
 # RNA_2025.1_PP3
 Treinamento de modelos de classificação para projeto prático da disciplina Redes Neurais Artificiais.
 
-# RNA_PP2
-Repositório destinado à publicação das atividades do 2° Projeto Prático de Redes Neurais Artificiais 2025.1  
+# RNA_PP3
+Repositório destinado à publicação das atividades do 23° Projeto Prático de Redes Neurais Artificiais 2025.1  
 **Data de criação:** 05/03/2025
 **Última atualização:** 07/04/2025 
 
@@ -28,6 +28,8 @@ RNA_2025.1_PP3/
 ├── analise_exploratoria.ipynb                    # Jupyter Notebook contendo a manipulaçao do dataset
 ├── grid_search.ipynb                             # Jupyter Notebook contendo a exemplo de busca em grade com hiperparâmetros selecionados
 ├── treinamento.ipynb                             # Jupyter Notebook contendo treinamento de redes neurais artificias por abordagens holdout 60/40 e downsampling
+├── xgboost.ipynb                                 # Jupyter Notebook contendo treinamento do modelo XGBoost
+├── analise_experimentos.ipynb                    # Jupyter Notebook contendo uma breve análise dos experimentos realizados 
 ├── star_classification.csv                       # Dataset utilizado para o problema de classificação
 ├── modified_star_classification.csv              # Dataset modificado através do Jupyter Notebook analise_exploratoria.ipnyb
 └── README.md                   # Documentação do projeto
