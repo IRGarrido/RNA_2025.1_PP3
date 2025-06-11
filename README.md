@@ -3,36 +3,39 @@ Treinamento de modelos de classificação para projeto prático da disciplina Re
 
 # RNA_PP3
 Repositório destinado à publicação das atividades do 23° Projeto Prático de Redes Neurais Artificiais 2025.1  
-**Data de criação:** 05/03/2025
-**Última atualização:** 07/04/2025 
+**Data de criação:** 24/05/2025
+**Última atualização:** 10/06/2025 
 
-Este projeto tem por objetivo a execução de um treinamento mediante Aprendizado Supervisionado do neurônio Perceptron de Rosenblatt para problemas de classificação. Nesse contexto, utiliza-se o dataset Stellar Classification Dataset - SDSS17, com dados disponíveis à comunidade científica pelo servidor Skyserver do levantamento astronômico Sloan Digital Sky Survey. A tarefa de classificação utiliza de valores ondas emitidas por um corpo celestes para definir se este é uma galáxia, quasar ou estrela.
+Este projeto tem por objetivo a execução de um treinamento mediante Aprendizado Supervisionado de uma rede neural MLP para problemas de classificação. Nesse contexto, utiliza-se o dataset Stellar Classification Dataset - SDSS17, com dados disponíveis à comunidade científica pelo servidor Skyserver do levantamento astronômico Sloan Digital Sky Survey. A tarefa de classificação utiliza de valores ondas emitidas por um corpo celestes para definir se este é uma galáxia, quasar ou estrela.
 Disponível em: https://www.kaggle.com/datasets/fedesoriano/stellar-classification-dataset-sdss17 
 
 ## Tecnologias Utilizadas
 - **Anaconda:** Gerenciamento de ambientes virtuais;
 - **Python:** Execução do algoritmo, utilizando as seguintes bibliotecas:
-  - **Pandas:** Manipulação de dados;
-  - **Numpy:** Processos matriciais otimizados;
-  - **Random:** Geração de números pseudo-aleatórios;
-  - **Sci-kit learn:** Métricas de treinamentos e modelos de redes neurais artificiais;
-  - **Keras:** Métricas de treinamentos, modelos de redes neurais artificiais e busca em grade;
+  - **Joblib:** Armazenamento do modelo em disco;
+  - **Keras:** Métricas de treinamentos, modelos de redes neurais artificiais e busca em grade (usado em modelo inicial);
   - **Matplotlib:** Plotagem de gráficos;
-  - **Pretty-table:** Organização e plotagem de dados tabulares.
+  - **Numpy:** Processos matriciais otimizados;
+  - **Pandas:** Manipulação de dados;
+  - **Pretty-table:** Organização e plotagem de dados tabulares;
+  - **Sci-kit learn:** Métricas de treinamentos e modelos de redes neurais artificiais;
+  - **XGBoost:** Modelo classificador XGBoost (Extreme Gradient Boost).
 
 ## Estrutura do Projeto
 ```plaintext
 RNA_2025.1_PP3/
+├── holdout                                       # Armazenamento de datasets de treino e de teste divididos entre atributo alvo e features
 ├── tuner1_dir/star_classification                # Resultados da busca em grade do Keras
 ├── .gitignore                                    # Manipulação de git para evitar conflitos de output na branch master
 ├── analise_exploratoria.ipynb                    # Jupyter Notebook contendo a manipulaçao do dataset
-├── grid_search.ipynb                             # Jupyter Notebook contendo a exemplo de busca em grade com hiperparâmetros selecionados
-├── treinamento.ipynb                             # Jupyter Notebook contendo treinamento de redes neurais artificias por abordagens holdout 60/40 e downsampling
+├── grid_search.ipynb                             # Jupyter Notebook contendo tentativa inicial de busca em grade com hiperparâmetros selecionados
+├── treinamento.ipynb                             # Jupyter Notebook contendo treinamento e busca em grade de redes neurais artificias por abordagens holdout 60/40 e downsampling
 ├── xgboost.ipynb                                 # Jupyter Notebook contendo treinamento do modelo XGBoost
-├── analise_experimentos.ipynb                    # Jupyter Notebook contendo uma breve análise dos experimentos realizados 
+├── analise_experimentos.ipynb                    # Jupyter Notebook contendo uma breve análise dos experimentos realizados comparado métricas 
 ├── star_classification.csv                       # Dataset utilizado para o problema de classificação
 ├── modified_star_classification.csv              # Dataset modificado através do Jupyter Notebook analise_exploratoria.ipnyb
-└── README.md                   # Documentação do projeto
+├── mlp_model.joblib                              # Melhor modelo de rede neural artificial MLP encontrado
+└── README.md                                     # Documentação do projeto
 ```
 
 ## Autores
